@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { StyleSheet } from "react-native";
-import { Button, CheckBox, Icon, ListItem } from "@rneui/themed";
+import { Button, CheckBox, Icon, ListItem } from "@rn-vui/base";
+import { FontAwesome } from "@react-native-vector-icons/fontawesome";
 
 // type ShoppingListItemProps = {
 //   item: string;
+//   key: string;
 //   removeFromList: (itemToDelete: string) => void;
 // };
 // const ShoppingListItem: React.FC<ShoppingListItemProps> = ({ item, removeFromList }) => {
 
-const ShoppingListItem = ({ item, removeFromList }: { item: string; removeFromList: (itemToDelete: string) => void }) => {
+// const ShoppingListItem = (args: object) => {
+const ShoppingListItem = ({ item, keyId, removeFromList }: { item: string; keyId: string; removeFromList: (itemToDelete: string) => void }) => {
   const [selected, setSelected] = useState(false);
 
   const toggleCheckbox = () => setSelected(!selected);
@@ -19,6 +22,7 @@ const ShoppingListItem = ({ item, removeFromList }: { item: string; removeFromLi
   return (
     <ListItem.Swipeable
       bottomDivider
+      key={keyId}
       rightWidth={70}
       containerStyle={selected && {backgroundColor: "#97a690"}}
       // style={selected && styles.listItem}
@@ -43,7 +47,8 @@ const ShoppingListItem = ({ item, removeFromList }: { item: string; removeFromLi
           buttonStyle={{ minHeight: '100%', backgroundColor: 'red' }}
           containerStyle={{ height: '100%' }}
         >
-          <Icon name="delete" color="white" />
+          <FontAwesome name="rocket" size={30} color="white" />
+          {/* <Icon name="delete" color="white" /> */}
         </Button>
       )}
     >

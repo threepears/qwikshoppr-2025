@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { MMKV } from 'react-native-mmkv';
+// import { MMKV } from 'react-native-mmkv';
+import { createAsyncStorage } from "@react-native-async-storage/async-storage";
 import {
   Dimensions,
   // ImageBackground,
@@ -13,17 +14,40 @@ import ShoppingList from "./components/ShoppingList";
 
 const { width, height } = Dimensions.get("window");
 const CartImage = require("@/assets/images/cart-icon.png");
-const storage = new MMKV()
+// const storage = new MMKV()
+const storage = createAsyncStorage("appDB");
 
-export default function Index() {
+// async function demo() {
+//   await storage.setItem("userToken", "abc123");
+
+//   const token = await storage.getItem("userToken");
+//   console.log("Stored token:", token); // abc123
+
+//   await storage.removeItem("userToken");
+// }
+
+const getLocalStorageItems = async () => {
   let localItems: string[] = [];
-  const stored = storage.getString("groceries");
+  const stored = await storage.getItem("groceries");
+  console.log("STORED", stored)
   if (stored) {
     localItems = JSON.parse(stored);
   }
+  return localItems
+}
+
+export default function Index() {
+  // let localItems: string[] = [];
+  // const stored = await storage.getItem("groceries");
+  // console.log("STORED", stored)
+  // if (stored) {
+  //   localItems = JSON.parse(stored);
+  // }
+
+  
 
   const [itemListText, setItemListText] = useState<string>("");
-  const [items, setItems] = useState<string[]>(localItems);
+  const [items, setItems] = useState<string[]>([]);
 
   useEffect(() => {
     console.log("INSIDE THE USE EFFECT")
@@ -31,11 +55,22 @@ export default function Index() {
     // const finalList = itemList.map((item) => item.trim());
 
     // setItems(finalList);
-  }, [itemListText]);
+    const fetchData = async () => {
+      try {
+        const localItems = await getLocalStorageItems()
+        setItems(localItems);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  // }, [itemListText]);
+  }, []);
 
   const MyCustomTitle = () => <Text style={styles.headerText}>QwikShoppr</Text>;
 
-  const createList = () => {
+  const createList = async () => {
     console.log("ITEM LIST TEXT", itemListText);
     console.log("ITEMS", items);
     
@@ -45,18 +80,18 @@ export default function Index() {
     console.log("FINAL LIST", finalList);
 
     setItemListText("");
-    storage.set("groceries", JSON.stringify(finalList));
+    await storage.setItem("groceries", JSON.stringify(finalList));
     // localStorage.setItem("groceries", JSON.stringify(finalList));
     setItems(finalList);
   }
 
-  const removeFromList = (itemToDelete: string) => {
+  const removeFromList = async (itemToDelete: string) => {
     console.log("REMOVING ITEM", itemToDelete);
     const finalList = items.filter((item: string) => item !== itemToDelete);
     console.log("AFTER ITEM REMOVED", finalList);
 
     setItemListText("");
-    storage.set("groceries", JSON.stringify(finalList));
+    storage.setItem("groceries", JSON.stringify(finalList));
     // localStorage.setItem("groceries", JSON.stringify(finalList));
     setItems(finalList);
   }
