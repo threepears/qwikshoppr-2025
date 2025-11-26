@@ -16,10 +16,7 @@ allprojects {
   repositories {
     google()
     mavenCentral()
-    maven { 
-      // url 'https://www.jitpack.io' 
-      url = uri(project(":react-native-async-storage_async-storage").file("local_repo"))
-    }
+    maven { url 'https://www.jitpack.io' }
   }
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet } from "react-native";
 import { Button, CheckBox, Icon, ListItem } from "@rn-vui/base";
-import { FontAwesome } from "@react-native-vector-icons/fontawesome";
+import { FontAwesome } from '@expo/vector-icons';
 
 // type ShoppingListItemProps = {
 //   item: string;
@@ -47,7 +47,7 @@ const ShoppingListItem = ({ item, keyId, removeFromList }: { item: string; keyId
           buttonStyle={{ minHeight: '100%', backgroundColor: 'red' }}
           containerStyle={{ height: '100%' }}
         >
-          <FontAwesome name="rocket" size={30} color="white" />
+          <FontAwesome name="trash" size={30} color="white" />
           {/* <Icon name="delete" color="white" /> */}
         </Button>
       )}

@@ -9,24 +9,24 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		5EC55C6B977B1DC4E1BA1B0D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21147912F061AE653C6F95 /* ExpoModulesProvider.swift */; };
-		B3746934C2C8BE7B033ECC4C /* libPods-qwikshoppr2025.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D0D68841E2AFA9018E2E36 /* libPods-qwikshoppr2025.a */; };
+		5733647CF5E98E9E78913413 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A67ED0996D2F300BD2D5A9 /* ExpoModulesProvider.swift */; };
+		6F33810C159E74BCC7E64A90 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C041E607236B3C9B6A78489D /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		E679F3E743BBDD568F2D4A8C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E38ACC8D466631C6B3B2E4A3 /* PrivacyInfo.xcprivacy */; };
+		D515D5D18A1CC51F38711CCE /* libPods-qwikshoppr2025.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4901457CB110DF72C6D0FD7F /* libPods-qwikshoppr2025.a */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A21147912F061AE653C6F95 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-qwikshoppr2025/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* qwikshoppr2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qwikshoppr2025.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = qwikshoppr2025/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = qwikshoppr2025/Info.plist; sourceTree = "<group>"; };
-		5C5E675AA94DCAB22DCF9CF8 /* Pods-qwikshoppr2025.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qwikshoppr2025.release.xcconfig"; path = "Target Support Files/Pods-qwikshoppr2025/Pods-qwikshoppr2025.release.xcconfig"; sourceTree = "<group>"; };
+		45A67ED0996D2F300BD2D5A9 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-qwikshoppr2025/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		4901457CB110DF72C6D0FD7F /* libPods-qwikshoppr2025.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qwikshoppr2025.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5005D93D8A02B1EB764E803 /* Pods-qwikshoppr2025.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qwikshoppr2025.debug.xcconfig"; path = "Target Support Files/Pods-qwikshoppr2025/Pods-qwikshoppr2025.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = qwikshoppr2025/SplashScreen.storyboard; sourceTree = "<group>"; };
+		BAC632CE50EDDEA19462E1BB /* Pods-qwikshoppr2025.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qwikshoppr2025.release.xcconfig"; path = "Target Support Files/Pods-qwikshoppr2025/Pods-qwikshoppr2025.release.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C4D0D68841E2AFA9018E2E36 /* libPods-qwikshoppr2025.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qwikshoppr2025.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E08B0C2F487585FD3782ADD7 /* Pods-qwikshoppr2025.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qwikshoppr2025.debug.xcconfig"; path = "Target Support Files/Pods-qwikshoppr2025/Pods-qwikshoppr2025.debug.xcconfig"; sourceTree = "<group>"; };
-		E38ACC8D466631C6B3B2E4A3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = qwikshoppr2025/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C041E607236B3C9B6A78489D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = qwikshoppr2025/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = qwikshoppr2025/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* qwikshoppr2025-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "qwikshoppr2025-Bridging-Header.h"; path = "qwikshoppr2025/qwikshoppr2025-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3746934C2C8BE7B033ECC4C /* libPods-qwikshoppr2025.a in Frameworks */,
+				D515D5D18A1CC51F38711CCE /* libPods-qwikshoppr2025.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,15 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				E38ACC8D466631C6B3B2E4A3 /* PrivacyInfo.xcprivacy */,
+				C041E607236B3C9B6A78489D /* PrivacyInfo.xcprivacy */,
+			);
+			name = qwikshoppr2025;
+			sourceTree = "<group>";
+		};
+		2AEE91372D71B45589669801 /* qwikshoppr2025 */ = {
+			isa = PBXGroup;
+			children = (
+				45A67ED0996D2F300BD2D5A9 /* ExpoModulesProvider.swift */,
 			);
 			name = qwikshoppr2025;
 			sourceTree = "<group>";
@@ -62,27 +70,17 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				C4D0D68841E2AFA9018E2E36 /* libPods-qwikshoppr2025.a */,
+				4901457CB110DF72C6D0FD7F /* libPods-qwikshoppr2025.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		39F06750AFBA608716C4D18A /* Pods */ = {
+		5134BD51051D4B01819E25FB /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				E08B0C2F487585FD3782ADD7 /* Pods-qwikshoppr2025.debug.xcconfig */,
-				5C5E675AA94DCAB22DCF9CF8 /* Pods-qwikshoppr2025.release.xcconfig */,
+				2AEE91372D71B45589669801 /* qwikshoppr2025 */,
 			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		4FF1DCEA391B94C4A698507A /* qwikshoppr2025 */ = {
-			isa = PBXGroup;
-			children = (
-				0A21147912F061AE653C6F95 /* ExpoModulesProvider.swift */,
-			);
-			name = qwikshoppr2025;
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -99,8 +97,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				39F06750AFBA608716C4D18A /* Pods */,
-				E6B96A95A012E8F959DE08C5 /* ExpoModulesProviders */,
+				8DD9CE2BFE2B570BE3FF502A /* Pods */,
+				5134BD51051D4B01819E25FB /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,6 +113,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8DD9CE2BFE2B570BE3FF502A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5005D93D8A02B1EB764E803 /* Pods-qwikshoppr2025.debug.xcconfig */,
+				BAC632CE50EDDEA19462E1BB /* Pods-qwikshoppr2025.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,14 +130,6 @@
 			);
 			name = Supporting;
 			path = qwikshoppr2025/Supporting;
-			sourceTree = "<group>";
-		};
-		E6B96A95A012E8F959DE08C5 /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				4FF1DCEA391B94C4A698507A /* qwikshoppr2025 */,
-			);
-			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "qwikshoppr2025" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				1C80C96411CD97A5C0106EB5 /* [Expo] Configure project */,
+				7F41939A35DE1543AA81D192 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				E7C0EE6C7810033A1E211464 /* [CP] Embed Pods Frameworks */,
+				8942D8A7DAF372275FA5549C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				E679F3E743BBDD568F2D4A8C /* PrivacyInfo.xcprivacy in Resources */,
+				6F33810C159E74BCC7E64A90 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +242,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1C80C96411CD97A5C0106EB5 /* [Expo] Configure project */ = {
+		7F41939A35DE1543AA81D192 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -334,7 +334,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-qwikshoppr2025/Pods-qwikshoppr2025-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E7C0EE6C7810033A1E211464 /* [CP] Embed Pods Frameworks */ = {
+		8942D8A7DAF372275FA5549C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,7 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				5EC55C6B977B1DC4E1BA1B0D /* ExpoModulesProvider.swift in Sources */,
+				5733647CF5E98E9E78913413 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +373,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E08B0C2F487585FD3782ADD7 /* Pods-qwikshoppr2025.debug.xcconfig */;
+			baseConfigurationReference = A5005D93D8A02B1EB764E803 /* Pods-qwikshoppr2025.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -409,7 +409,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C5E675AA94DCAB22DCF9CF8 /* Pods-qwikshoppr2025.release.xcconfig */;
+			baseConfigurationReference = BAC632CE50EDDEA19462E1BB /* Pods-qwikshoppr2025.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

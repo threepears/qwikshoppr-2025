@@ -9,7 +9,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import { Button, Header, Input } from "@rneui/themed";
+import { Button, Header, Input } from "@rn-vui/base";
 import ShoppingList from "./components/ShoppingList";
 
 const { width, height } = Dimensions.get("window");
